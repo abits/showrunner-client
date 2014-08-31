@@ -1,0 +1,9 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+.tags
+.tags_sorted_by_file
+showrunner-client.sublime-project
+showrunner-client.sublime-workspace
