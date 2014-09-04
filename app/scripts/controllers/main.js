@@ -31,7 +31,7 @@ var PaginationDemoCtrl = function ($scope) {
   $scope.totalItems = 64;
   $scope.currentPage = 1;
 
-  $scope.$on('listLoaded', function(event, data) {console.dir("data")})
+  $scope.$on('listLoaded', function(event, data) {console.dir("P")})
 
   $scope.setPage = function (pageNo) {
     $scope.currentPage = pageNo;
