@@ -27,15 +27,16 @@ showrunnerClientApp.factory("CurrentShowList", ["$resource",
     return $resource('https://api.themoviedb.org/3/tv/on_the_air?api_key=b62c12ba0ea3813f66f9761d20f02cfa', {}, {'query': {method: 'GET', isArray: false}});
   }]);
 
-var PaginationDemoCtrl = function ($scope) {
-  $scope.totalItems = 64;
-  $scope.currentPage = 1;
+showrunnerClientApp.controller('PaginationDemoCtrl', ['$scope',
+  function ($scope) {
+    $scope.totalItems = 64;
+    $scope.currentPage = 1;
 
-  $scope.$on('listLoaded', function(event, data) {console.dir("P")})
+    $scope.$on('listLoaded', function(event, data) {console.dir("P")})
 
-  $scope.setPage = function (pageNo) {
-    $scope.currentPage = pageNo;
-  };
+    $scope.setPage = function (pageNo) {
+      $scope.currentPage = pageNo;
+    }
 
   $scope.pageChanged = function() {
     $scope.$emit('loadPage', $scope.currentPage)
@@ -45,7 +46,7 @@ var PaginationDemoCtrl = function ($scope) {
   $scope.maxSize = 5;
   $scope.bigTotalItems = 175;
   $scope.bigCurrentPage = 1;
-};
+}]);
 
 
 
