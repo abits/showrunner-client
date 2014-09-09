@@ -7,11 +7,13 @@
  * # AboutCtrl
  * Controller of the showrunnerClientApp
  */
-angular.module('showrunnerClientApp')
-  .controller('AboutCtrl', function ($scope) {
+ /*var showrunnerClientApp = angular.module('showrunnerClientApp', ['ngResource', 'ui.bootstrap']);
+
+ showrunnerClientApp.controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
   });
+*/

@@ -3,7 +3,10 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('showrunnerClientApp'));
+  beforeEach(function () {
+    module('showrunnerClientApp');
+    module('ui.bootstrap');
+  });
 
   var MainCtrl,
     scope;
