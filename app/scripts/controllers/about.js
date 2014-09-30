@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name showrunnerClientApp.controller:AboutCtrl
+ * @name ShowRunnerApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the showrunnerClientApp
+ * Controller of the ShowRunnerApp
  */
- /*var showrunnerClientApp = angular.module('showrunnerClientApp', ['ngResource', 'ui.bootstrap']);
+ /*var ShowRunnerApp = angular.module('ShowRunnerApp', ['ngResource', 'ui.bootstrap']);
 
- showrunnerClientApp.controller('AboutCtrl', function ($scope) {
+ ShowRunnerApp.controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

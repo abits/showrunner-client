@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
@@ -14,4 +16,23 @@ body {
 
 footer {
     margin: 50px 0;
+}
+
+.icon-overlay {
+    top: 33px;
+    left: 80px;
+    padding-right: 2px;
+    font-size: 1.2em;
+    color: white;
+    opacity: 0.7;
+}
+
+.icon-overlay:hover {
+    opacity: 1.0;
+    color: white;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
 }

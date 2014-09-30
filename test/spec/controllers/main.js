@@ -4,7 +4,7 @@ describe('Controller: MainCtrl', function () {
 
   // load the controller's module
   beforeEach(function () {
-    module('showrunnerClientApp');
+    module('ShowRunnerApp');
     module('ui.bootstrap');
   });
 

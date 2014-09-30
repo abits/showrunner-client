@@ -2,21 +2,21 @@
 
 /**
  * @ngdoc overview
- * @name showrunnerClientApp
+ * @name ShowRunnerApp
  * @description
- * # showrunnerClientApp
+ * # ShowRunnerApp
  *
  * Main module of the application.
  */
 angular
-  .module('showrunnerClientApp', [
+  .module('ShowRunnerApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'showrunnerClientApp.services',
+    'ShowRunnerApp.services',
     'ngPrettyJson'
   ])
   .config(function ($routeProvider) {

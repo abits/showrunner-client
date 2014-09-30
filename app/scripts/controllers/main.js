@@ -2,52 +2,116 @@
 
 /**
  * @ngdoc function
- * @name showrunnerClientApp.controller:MainCtrl
+ * @name ShowRunnerApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the showrunnerClientApp
+ * Controller of the ShowRunnerApp
  */
-var showrunnerClientApp = angular.module('showrunnerClientApp', ['ngResource', 'ui.bootstrap']);
+ var showrunnerApp = angular.module('showrunnerApp', ['ngRoute', 'ngResource', 'ui.bootstrap']);
 
+showrunnerApp.
+  config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+      $routeProvider
+        .when('/download/:showId', {
+          templateUrl: 'download.html',
+          controller: 'DownloadCtrl',
+          controllerAs: 'download'
+        })
+        .when('/info/:showId', {
+          templateUrl: 'info.html',
+          controller: 'InfoCtrl',
+          controllerAs: 'info'
+        })
+        .when('/', {
+          templateUrl: 'main.html',
+          controller: 'ShowListCtrl',
+          controllerAs: 'list'
+        })
+        ;
 
-showrunnerClientApp.controller('MainCtrl', ['$scope', 'CurrentShowList',
-  function ($scope, CurrentShowList) {
+      // configure html5 to get links working on jsfiddle
+      $locationProvider.html5Mode(true);
+  }])
 
-    var loadPage = function(pageNumber) {
-      $scope.fullShowInfo = CurrentShowList.query({'page': pageNumber});
-    };
-    loadPage(1);
-    $scope.$broadcast('listLoaded', $scope.fullShowInfo)
-    $scope.$on('loadPage', function(event, pageNumber) { loadPage(pageNumber) });
+ showrunnerApp.controller('ShowListCtrl', ['$scope', 'CurrentShowList',
+    function ($scope, CurrentShowList) {
 
-  }]);
+      var loadPage = function(pageNumber) {
+        $scope.fullShowInfo = CurrentShowList.query({'page': pageNumber});
+      };
+      loadPage(1);
+      $scope.$on('loadPage', function(event, pageNumber) { loadPage(pageNumber) });
 
-showrunnerClientApp.factory("CurrentShowList", ["$resource",
-  function ($resource) {
-    return $resource('https://api.themoviedb.org/3/tv/on_the_air?api_key=b62c12ba0ea3813f66f9761d20f02cfa', {}, {'query': {method: 'GET', isArray: false}});
-  }]);
+    }]);
 
-showrunnerClientApp.controller('PaginationDemoCtrl', ['$scope',
-  function ($scope) {
-    $scope.totalItems = 64;
-    $scope.currentPage = 1;
+ showrunnerApp.factory("CurrentShowList", ["$resource",
+     function ($resource) {
+      return $resource('https://api.themoviedb.org/3/tv/on_the_air?api_key=b62c12ba0ea3813f66f9761d20f02cfa', {}, {'query': {method: 'GET', isArray: false}});
+    }]);
 
-    $scope.$on('listLoaded', function(event, data) {console.dir("P")})
+ showrunnerApp.factory("DownloadInfo", ["$resource",
+     function ($resource, id) {
+       console.log(id);
+       return id;
 
-    $scope.setPage = function (pageNo) {
-      $scope.currentPage = pageNo;
-    }
+    }]);
 
-  $scope.pageChanged = function() {
-    $scope.$emit('loadPage', $scope.currentPage)
-    console.log('Page changed to: ' + $scope.currentPage);
-  };
+ showrunnerApp.controller('PaginationDemoCtrl', ['$scope',
+    function ($scope) {
+      $scope.totalItems = 60;
+      $scope.currentPage = 1;
 
-  $scope.maxSize = 5;
-  $scope.bigTotalItems = 175;
-  $scope.bigCurrentPage = 1;
-}]);
+      $scope.setPage = function (pageNo) {
+        $scope.currentPage = pageNo;
+      }
 
+      $scope.pageChanged = function() {
+        $scope.$emit('loadPage', $scope.currentPage)
+        console.log('Page changed to: ' + $scope.currentPage);
+      };
 
+    }]);
+
+ var ModalDemoCtrl = function ($scope, $modal, $log) {
+
+   $scope.items = ['item1', 'item2', 'item3'];
+
+   $scope.open = function (size) {
+
+     var modalInstance = $modal.open({
+       templateUrl: 'download.html',
+       controller: ModalInstanceCtrl,
+       size: size,
+       resolve: {
+         items: function () {
+           return $scope.items;
+         }
+       }
+     });
+
+     modalInstance.result.then(function (selectedItem) {
+       $scope.selected = selectedItem;
+     }, function () {
+       $log.info('Modal dismissed at: ' + new Date());
+     });
+   };
+ };
+
+ var ModalInstanceCtrl = function ($scope, $modalInstance, items) {
+
+   $scope.items = items;
+   $scope.selected = {
+     item: $scope.items[0]
+   };
+
+   $scope.ok = function () {
+     $modalInstance.close($scope.selected.item);
+   };
+
+   $scope.cancel = function () {
+     $modalInstance.dismiss('cancel');
+   };
+ };
 
 

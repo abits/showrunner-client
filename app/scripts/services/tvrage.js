@@ -1,4 +1,4 @@
-angular.module('showrunnerClientApp.services', ['ngResource'])
+angular.module('ShowRunnerApp.services', ['ngResource'])
   .factory('fullShowInfo', function($resource){
     return $resource('http://services.tvrage.com/feeds/full_show_info.php?sid=2930', {})
   })
