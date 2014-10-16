@@ -1,0 +1,22 @@
+{
+  "name": "showrunner-client",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Martel <chris@codeways.org>"
+  ],
+  "description": "gather tv show infos",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3",
+    "lodash": "~2.4.1",
+    "angular-material": "~0.4.0"
+  }
+}
