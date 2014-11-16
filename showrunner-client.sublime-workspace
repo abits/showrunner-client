@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"proxy_url"
+			],
+			[
+				"xml",
+				"xmlDoc"
+			],
+			[
+				"ent",
+				"entries"
+			],
+			[
+				"files",
+				"filestubeUri"
+			],
+			[
+				"m",
+				"material"
+			],
+			[
 				"download",
 				"download/:showId"
 			],
@@ -132,27 +152,30 @@
 	"buffers":
 	[
 		{
-			"file": "app/scripts/controllers/main.js",
+			"file": "src/feedparser.html",
 			"settings":
 			{
-				"buffer_size": 2202,
+				"buffer_size": 2507,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/scripts/app.js",
+			"file": "vendor/angular-material/angular-material.min.css",
 			"settings":
 			{
-				"buffer_size": 986,
+				"buffer_size": 110676,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/index.html",
+			"contents": "Remote:   origin @ git@bitbucket.org:cmartel/showrunner-client.git\nLocal:    material ~/Projekte/showrunner-client\nHead:     8588e0b wip\n\n\nUntracked files:\n	vendor/\n\nChanges:\n	Modified   showrunner-client.sublime-workspace\n\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
 			"settings":
 			{
-				"buffer_size": 7085,
-				"line_ending": "Unix"
+				"buffer_size": 985,
+				"line_ending": "Unix",
+				"name": "*git-status*: showrunner-client",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -165,6 +188,10 @@
 			[
 				"push",
 				"Git: Push"
+			],
+			[
+				"git st",
+				"Git: Status"
 			],
 			[
 				"status",
@@ -290,37 +317,39 @@
 	"expanded_folders":
 	[
 		"/Users/chm/Projekte/showrunner-client",
-		"/Users/chm/Projekte/showrunner-client/app",
-		"/Users/chm/Projekte/showrunner-client/app/scripts",
-		"/Users/chm/Projekte/showrunner-client/app/scripts/controllers",
-		"/Users/chm/Projekte/showrunner-client/app/styles",
-		"/Users/chm/Projekte/showrunner-client/app/views",
-		"/Users/chm/Projekte/showrunner-client/bower_components",
-		"/Users/chm/Projekte/showrunner-client/bower_components/bootstrap-material-design",
-		"/Users/chm/Projekte/showrunner-client/bower_components/bootstrap-material-design/css-compiled",
-		"/Users/chm/Projekte/showrunner-client/bower_components/bootstrap-material-design/icons"
+		"/Users/chm/Projekte/showrunner-client/src",
+		"/Users/chm/Projekte/showrunner-client/src/app",
+		"/Users/chm/Projekte/showrunner-client/src/app/css",
+		"/Users/chm/Projekte/showrunner-client/src/app/img",
+		"/Users/chm/Projekte/showrunner-client/src/app/img/icons",
+		"/Users/chm/Projekte/showrunner-client/vendor",
+		"/Users/chm/Projekte/showrunner-client/vendor/angular-material"
 	],
 	"file_history":
 	[
+		"/Users/chm/Projekte/showrunner-client/src/index.html",
+		"/Users/chm/Projekte/showrunner-client/src/app/css/main.css",
+		"/Users/chm/Projekte/showrunner-client/gulpfile.js",
+		"/Users/chm/Projekte/showrunner-client/bower.json",
+		"/Users/chm/Projekte/showrunner-client/package.json",
+		"/Users/chm/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/chm/Projekte/showrunner-client/app/index.html",
+		"/Users/chm/Projekte/showrunner-client/app/scripts/controllers/main.js",
+		"/Users/chm/Projekte/showrunner-client/app/scripts/app.js",
 		"/Users/chm/Projekte/showrunner-client/app/styles/thumbnail-gallery.scss",
 		"/Users/chm/Projekte/showrunner-client/app/views/download.html",
 		"/Users/chm/Projekte/showrunner-client/app/scripts/controllers/about.js",
-		"/Users/chm/Projekte/showrunner-client/app/scripts/app.js",
-		"/Users/chm/Projekte/showrunner-client/app/index.html",
 		"/Users/chm/Projekte/showrunner-client/test/spec/controllers/main.js",
 		"/Users/chm/Projekte/showrunner-client/test/spec/controllers/about.js",
 		"/Users/chm/Projekte/showrunner-client/dist/scripts/scripts.029daf2f.js",
 		"/Users/chm/Projekte/showrunner-client/dist/index.html",
-		"/Users/chm/Projekte/showrunner-client/app/scripts/controllers/main.js",
 		"/Users/chm/Projekte/showrunner-client/app/scripts/services/tvrage.js",
 		"/Users/chm/Projekte/showrunner-client/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss",
 		"/Users/chm/Projekte/showrunner-client/Gruntfile.js",
-		"/Users/chm/Projekte/showrunner-client/bower.json",
 		"/Users/chm/Projekte/showrunner-client/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_buttons.scss",
 		"/Users/chm/Projekte/showrunner-client/Procfile",
 		"/Users/chm/Projekte/showrunner-client/web.js",
 		"/Users/chm/tmp/hk-nj/web.js",
-		"/Users/chm/Projekte/showrunner-client/package.json",
 		"/Users/chm/Projekte/showrunner-client/error.html",
 		"/Users/chm/Projekte/showrunner-client/index.html",
 		"/Users/chm/Projekte/showrunner-client/app/gallery.html",
@@ -445,6 +474,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"var",
+			"result",
+			"checked",
+			"layout",
+			"css",
 			"rel",
 			"ShowRunnerClientApp",
 			"thumb",
@@ -505,94 +539,29 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/scripts/controllers/main.js",
+					"file": "src/feedparser.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2202,
+						"buffer_size": 2507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								150,
-								150
+								1939,
+								1939
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/scripts/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2374,
-								2374
-							]
-						],
-						"settings":
-						{
+							"auto_name": "",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -600,11 +569,81 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
+						"translation.x": 118.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "vendor/angular-material/angular-material.min.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 110676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
 						"translation.x": 0.0,
-						"translation.y": 928.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"draw_white_space": "none",
+							"git_repo": "/Users/chm/Projekte/showrunner-client",
+							"git_status": true,
+							"git_view": "status",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SublimeGit/syntax/SublimeGit Status.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -657,6 +696,14 @@
 	{
 		"height": 198.0
 	},
+	"output.GoSublime-main-output":
+	{
+		"height": 138.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 138.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -698,7 +745,7 @@
 		[
 			[
 				"",
-				"~/Projekte/showrunner-client/showrunner-client.sublime-project"
+				"~/Projekte/go/src/github.com/abits/showrunner/showunner.sublime-project"
 			]
 		],
 		"width": 380.0
